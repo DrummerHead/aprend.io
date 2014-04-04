@@ -1,0 +1,10 @@
+!!! 5
+%html
+  %head
+    %title= current_page.data.title || "The Middleman"
+    %meta{ charset: "utf-8"}
+    = stylesheet_link_tag "main"
+  %body{ class: page_classes }
+    = yield
+    #scripts
+      = javascript_include_tag  "main"
