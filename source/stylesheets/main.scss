@@ -1,0 +1,246 @@
+/* Stylesheets for aprend.io */
+
+
+/*
+ * Baseline
+ * ========================== */
+
+html {
+  font-size: 1.4em;
+  line-height: 1.4;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+h1,
+h2 {
+  margin: .5em 0;
+  line-height: 1;
+  font-family: Gotham, Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2.2em;
+}
+img {
+  max-width: 100%;
+}
+small {
+  font-size: .8em;
+}
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/* end Baseline */
+
+
+
+
+/*
+ * Color scheme
+ * ========================== */
+
+$light-blue: #b5d5e1;
+$light-blue-harsh: #73a8b6;
+$blue-harsh: #4387a0;
+$rust: #f5e6a2;
+$rust-harsh: #e5bd32;
+$mustard-harsh: #d19e18;
+$blood-harsh: #d52b08;
+
+/* end Color scheme */
+
+
+
+
+/*
+ * Mixins, helpers
+ * ========================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+/* end Mixins, helpers */
+
+
+
+
+/*
+ * Fonts
+ * ========================== */
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('/fonts/gotham.eot');
+  src: url('/fonts/gotham.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/gotham.woff') format('woff'),
+       url('/fonts/gotham.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+/* end Fonts */
+
+
+
+
+/*
+ * Persistent
+ * ========================== */
+
+[role='banner'] {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding: 1em 1em;
+  background-color: $light-blue;
+}
+.brand {
+}
+.brand a {
+  display: block;
+  width: 277px;
+  padding: 1em 0;
+}
+.brand img {
+  display: block;
+}
+.brand .logo {
+  margin: 0 0 .3em 0;
+}
+.brand .slogan {
+}
+.brand small {
+}
+[role='banner'] > nav {
+}
+[role='navigation'] {
+}
+[role='navigation'] li {
+}
+[role='navigation'] a {
+}
+[role='navigation'] ol {
+}
+[role='navigation'] > li {
+}
+[role='navigation'] ol li {
+}
+[role='navigation'] ol li a {
+}
+.social {
+}
+.social ol {
+}
+.social li {
+}
+.social a {
+}
+.social img {
+}
+
+[role='main'] {
+  margin: 0 0 0 14.3em;
+  padding: 1em 2.5em;
+  background-color: $rust;
+}
+
+
+
+
+/* end Persistent */
+
+
+
+
+/*
+ * Modular
+ * ========================== */
+
+/* end Modular */
+
+
+
+
+/*
+ * Specific page: x
+ * ========================== */
+
+/* end Specific page: x */
+
+
+
+
+/*
+ * Media queries
+ * ========================== */
+
+/* end Media queries */
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * x
+ * ========================== */
+
+/* end x */
+
+/*
+ * Specific page: x
+ * ========================== */
+
+/* end Specific page: x */
