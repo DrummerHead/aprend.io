@@ -2,6 +2,47 @@
 
 
 /*
+ * Color scheme
+ * ========================== */
+
+$light-blue: #b5d5e1;
+$light-blue-harsh: #73a8b6;
+$blue-harsh: #4387a0;
+$rust: #f5e6a2;
+$rust-harsh: #e5bd32;
+$mustard-harsh: #d19e18;
+$blood-harsh: #d52b08;
+
+/* end Color scheme */
+
+
+
+
+/*
+ * Mixins, helpers
+ * ========================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+@mixin transition($length) {
+  -webkit-transition: all $length ease-out;
+     -moz-transition: all $length ease-out;
+       -o-transition: all $length ease-out;
+          transition: all $length ease-out;
+}
+/* end Mixins, helpers */
+
+
+
+
+/*
  * Baseline
  * ========================== */
 
@@ -35,9 +76,22 @@ section,
 summary {
   display: block;
 }
+a {
+  color: saturate(darken($light-blue, 45), 60);
+  @include transition(200ms);
+}
 a:active,
 a:hover {
   outline: 0;
+}
+a:hover {
+  padding: .1em 0;
+  color: saturate(darken($light-blue, 35), 70);
+  background-color: $rust-harsh;
+  text-decoration: none;
+}
+a:active {
+  background-color: $light-blue-harsh;
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -72,41 +126,6 @@ small {
 }
 
 /* end Baseline */
-
-
-
-
-/*
- * Color scheme
- * ========================== */
-
-$light-blue: #b5d5e1;
-$light-blue-harsh: #73a8b6;
-$blue-harsh: #4387a0;
-$rust: #f5e6a2;
-$rust-harsh: #e5bd32;
-$mustard-harsh: #d19e18;
-$blood-harsh: #d52b08;
-
-/* end Color scheme */
-
-
-
-
-/*
- * Mixins, helpers
- * ========================== */
-
-.clearfix:before,
-.clearfix:after {
-  content: '';
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
-/* end Mixins, helpers */
 
 
 
@@ -147,6 +166,7 @@ $blood-harsh: #d52b08;
   display: block;
   width: 277px;
   padding: 1em 0;
+  background-color: transparent;
 }
 .brand img {
   display: block;
@@ -202,6 +222,14 @@ $blood-harsh: #d52b08;
 /*
  * Modular
  * ========================== */
+
+article {
+}
+article header {
+}
+article header h1 {
+  margin-top: .42em;
+}
 
 /* end Modular */
 
