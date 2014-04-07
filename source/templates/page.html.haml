@@ -1,31 +1,45 @@
+- content_for(:subject_title, subject_title)
+- if page_title != nil
+  - content_for(:page_title, page_title)
+
 %article
   %header
-    %h1 title of video, concept, whatever
+    %h1
+      = "#{subject_title}"
+      - if page_title != nil
+        = "&#9656; #{page_title}"
+      %small= number
   %section#video
     = image_tag "http://placehold.it/700x400&text=video"
     %small
-      recomiendo ver a 1080 y usar audifonos
+      1080 y audifonos recomendado
   %section#details
-    %p en este video la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, la sicodelia es fuerte, 
+    %p= description
 
     %h2 Codigo
     %ul
-      %li
-        = link_to "codigo", "http://github.com/"
-      %li
-        = link_to "codigo", "http://github.com/"
+      - code_url.each do |code_link|
+        %li
+          = link_to code_link, code_link
 
     %h2 Links relacionados
     %ul
-      %li
-        = link_to "w3fools", "http://www.w3fools.com/"
-      %li
-        = link_to "validator", "http://validator.w3.org/"
+      - links.each do |link|
+        %li
+          = link_to link, link
+
     %h2 Keywords
     %ul
-      %li magia
-      %li existencia
-      %li amor
-      %li creacion
+      - keywords.each do |keyword|
+        %li= keyword
+
   %section#comments
     %p this is the comments area
+
+%ul
+  - if previous_page
+    %li
+      = link_to "Previous", previous_page
+  - if next_page
+    %li
+      = link_to "Next", next_page

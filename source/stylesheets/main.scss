@@ -206,9 +206,11 @@ small {
 }
 
 [role='main'] {
+  position: relative;
   margin: 0 0 0 14.3em;
   padding: 1em 2.5em;
   background-color: $rust;
+  overflow: hidden;
 }
 
 
@@ -228,7 +230,25 @@ article {
 article header {
 }
 article header h1 {
+  display: block;
   margin-top: .42em;
+  padding-right: .75em;
+}
+
+$small-size: 2.5em;
+h1 small {
+  background-color: $light-blue;
+  color: $blue-harsh;
+  border-radius: $small-size;
+  font-size: 1em;
+  height: $small-size;
+  line-height: $small-size;
+  position: absolute;
+  right: -3.1em;
+  text-align: center;
+  text-indent: -2.9em;
+  top: 0;
+  width: $small-size * 2;
 }
 
 /* end Modular */

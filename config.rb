@@ -28,6 +28,78 @@
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
+
+
+pages_for_pagination = []
+pages_for_pagination_index = 0
+
+
+data.pages.each do |subject, subject_data|
+  if !subject_data.children
+    pages_for_pagination << "/#{subject_data.metadata.url}/index.html"
+  else
+    subject_data.children.each do |page, page_data|
+      pages_for_pagination << "/#{subject_data.metadata.url}/#{page_data.metadata.url}/index.html"
+    end
+  end
+end
+
+data.pages.each do |subject, subject_data|
+  if !subject_data.children
+    proxy "/#{subject_data.metadata.url}/index.html", "/templates/page.html", locals: {
+      subject_title: subject_data.metadata.page_title,
+      page_title: nil,
+      number: subject_data.metadata.number,
+      video_url: subject_data.video_url,
+      description: subject_data.description,
+      code_url: subject_data.code_url,
+      links: subject_data.links,
+      keywords: subject_data.keywords,
+      comments: subject_data.comments,
+      previous_page: pages_for_pagination_index > 0 ? pages_for_pagination[pages_for_pagination_index-1] || nil : nil,
+      next_page: pages_for_pagination[pages_for_pagination_index+1] || nil
+    }, ignore: true
+
+    pages_for_pagination_index += 1
+  else
+    proxy "/#{subject_data.metadata.url}/index.html", "/templates/subject.html", locals: {
+      subject_title: subject_data.metadata.page_title,
+      pages: subject_data.children
+    }, ignore: true
+
+    subject_data.children.each do |page, page_data|
+      proxy "/#{subject_data.metadata.url}/#{page_data.metadata.url}/index.html", "/templates/page.html", locals: {
+        subject_title: subject_data.metadata.page_title,
+        page_title: page_data.metadata.page_title,
+        number: page_data.metadata.number,
+        video_url: page_data.video_url,
+        description: page_data.description,
+        code_url: page_data.code_url,
+        links: page_data.links,
+        keywords: page_data.keywords,
+        comments: page_data.comments,
+        previous_page: pages_for_pagination_index > 0 ? pages_for_pagination[pages_for_pagination_index-1] || nil : nil,
+        next_page: pages_for_pagination[pages_for_pagination_index+1] || nil
+      }, ignore: true
+
+      pages_for_pagination_index += 1
+    end
+  end
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###
 # Helpers
 ###

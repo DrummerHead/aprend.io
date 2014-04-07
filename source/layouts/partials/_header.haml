@@ -7,27 +7,15 @@
 
   %nav
     %ol{ role: "navigation" }
-      %li
-        = link_to "html", "/"
-        %ol
-          %li
-            =link_to "alpha", "/"
-          %li
-            =link_to "bravo", "/"
-      %li
-        = link_to "css", "/"
-        %ol
-          %li
-            =link_to "alpha", "/"
-          %li
-            =link_to "bravo", "/"
-      %li
-        = link_to "project", "/"
-        %ol
-          %li
-            =link_to "alpha", "/"
-          %li
-            =link_to "bravo", "/"
+      - data.pages.each do |subject, subject_data|
+        %li
+          = link_to subject_data.metadata.page_title, "/" + subject_data.metadata.url
+          - if subject_data.children
+            %ol
+              - subject_data.children.each do |page, page_data|
+                %li
+                  = link_to page_data.metadata.page_title, "/" + subject_data.metadata.url + "/" + page_data.metadata.url
+
   .social
     %ol
       %li

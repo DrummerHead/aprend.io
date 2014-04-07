@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title= current_page.data.title || "aprend.io"
+    %title= "aprend.io" + (content_for?(:subject_title) ? " &#183; #{yield_content(:subject_title)}" + (content_for?(:page_title) ? " &#9656; #{yield_content(:page_title)}" : "" ) : "")
     %meta{ charset: "utf-8"}
     %meta{ name: "author", content: "DrummerHead"}
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1"}
