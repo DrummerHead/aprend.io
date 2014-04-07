@@ -1,0 +1,253 @@
+Introduccion:
+  metadata:
+    page_title: Introducción
+    url: introduccion
+    number: "01"
+  video_url: tJvvwRMQNAo
+  description: Introducción a la serie de videos que componen este curso de Front-End. Vamos a hablar también de la teoría detras de crear un producto y de como crear HTML y CSS no es un fin en si mismo sino que es una forma de poder transmitir una idea y resolver un problema. Breve introducción a la crearción de wireframes.
+  code_url:
+    - https://github.com/DrummerHead/
+  links:
+    - a leenk
+  keywords:
+    - publico objetivo
+    - back-end
+    - developer
+    - Googlear
+    - producto
+    - planear
+    - objetivos
+    - features
+    - user stories
+    - contenido
+    - Lorem Ipsum
+    - wireframes
+    - landing page
+    - elevator pitch
+    - call to action
+    - Illustrator
+    - Axure
+    - Omnigraffle
+  comments: disqus
+HTML:
+  metadata:
+    page_title: HTML
+    url: html
+  children:
+    introduccion:
+      metadata:
+        page_title: Introducción
+        url: introduccion
+        number: "02"
+      video_url: hpdPOFSGOGo
+      description: Comenzamos con una definición de HTML y continuamos con una analogía para entender conceptos de propiedades, anidación e indentación. Vemos posibles editores de texto para comenzar a escribir código, hablamos del DOCTYPE y vemos la estructúra básica de un documento HTML5.
+      code_url:
+        - https://github.com/DrummerHead/
+      links:
+        - http://bluefish.openoffice.nl/download.html
+        - https://projects.gnome.org/gedit/
+        - http://notepad-plus-plus.org/download/
+        - http://download.brackets.io/
+        - http://www.vim.org/
+        - http://www.gnu.org/software/emacs/
+        - http://en.wikipedia.org/wiki/Comparison_of_text_editors
+      keywords:
+        - markup language
+        - analogía
+        - XML
+        - elemento
+        - bracket
+        - tag
+        - indentación
+        - atributo
+        - propiedad
+        - valor
+        - key-value
+        - abstracción
+        - editores de texto
+        - syntax highlighting
+        - Open Source
+        - distro de Linux
+        - consola
+        - features
+        - DOCTYPE
+        - HTML5
+        - HTML básico
+        - metadatos
+        - self-closing element
+        - encoding
+        - index.html
+      comments: disqus
+    semantica:
+      metadata:
+        page_title: Semántica
+        url: semantica
+        number: "03"
+      video_url: 07L0sk2J5e4
+      description: Vemos elementos basicos de HTML y explicamos la diferencia entre el paradigma "Word" basado en apariencia y el paradigma de semantica que usamos en HTML. Comenzamos a editar un archivo de texto como HTML, vemos anchor e imagenes, explicamos la diferencia entre el rol de una imagen como contenido y como factor estetico. NOTA encontrar una forma consistente de escribir esto, creo que los tiempos no estan encarando
+      code_url:
+        - https://github.com/DrummerHead/
+      links:
+        - https://getfirebug.com/
+      keywords:
+        - elementos básicos
+        - Libre Office
+        - Markdown
+        - heading
+        - paragraph
+        - semántica
+        - Cascading Style Sheets
+        - "HTML: Contenido"
+        - "CSS: Presentación"
+        - Firebug
+        - Document Object Model
+        - Definition List
+        - anchor
+        - href
+        - img
+        - self-closing element
+        - void element
+        - src
+        - URL relativa
+        - URL absoluta
+        - alt
+        - Lynx web browser
+        - accesibilidad
+        - Search Engine Optimization
+        - contenido
+        - estética
+        - web developer tools
+        - developer console
+      comments: disqus
+CSS:
+  metadata:
+    page_title: CSS
+    url: css
+  children:
+    introduccion:
+      metadata:
+        page_title: Introducción
+        url: introduccion
+        number: "05"
+      video_url: SAxg6Sqicgw
+      description: Analizamos la estructura basica de un selector, su sintaxis y componentes; explicamos clases & id. Modificamos documentos de capitulos anteriores y vemos como CSS puede modificar el aspecto de nuestros documentos
+      code_url:
+        - https://github.com/DrummerHead/
+      links:
+        -
+      keywords:
+        - keywords
+        - firebug
+        - add-ons
+        - hexadecimal
+        - sintaxis
+        - minificación
+        - match
+        - selector
+        - grids
+        - scrollbar
+        - hook
+        - back-end
+        - on the fly
+        - pseudo-selector
+      comments: disqus
+    propiedades_de_texto:
+      metadata:
+        page_title: Propiedades de texto
+        url: propiedades-de-texto
+        number: "06"
+      video_url: 5tzkmTmfRKQ
+      description:
+      code_url:
+        - https://github.com/DrummerHead/
+        - https://aprend.io/propiedades-de-texto/propiedades-css-relacionadas-a-texto
+        - https://aprend.io/propiedades-de-texto/tabla-de-herencia-css
+      links:
+        - http://mcdlr.com/responsive-web-design-presentation/
+        - http://www.fonts.com/content/learning/fontology/level-1/type-families/about-typeface-families
+        - http://en.wikipedia.org/wiki/Italic_type
+      keywords:
+        - layout
+        - background-color
+        - hexadecimal
+        - font stack
+        - web fonts
+        - sans-serif
+        - serif
+        - monospace
+        - cursive
+        - fantasy
+        - DuckDuckGo
+        - absoluto
+        - relativo
+        - handheld devices
+        - inline style
+        - responsive web design
+        - layouts fluidos
+        - skew
+        - flow
+        - thumbnail
+        - gaussian blur
+        - kerning
+      comments: disqus
+Proyecto:
+  metadata:
+    page_title: Pizzatio
+    url: pizzatio
+  children:
+    pizzatio_01:
+      metadata:
+        page_title: Estructura básica
+        url: estructura-basica
+        number: "11"
+      video_url: FgR9KAmcZOU
+      description: Comenzamos un projecto de ejemplo, Pizzatio, que es una página de una pizzería. Vemos una estructura básica HTML de inicio asi como una estructura de carpetas para poder comenzar a construir nuestro sitio.
+      code_url:
+        - https://github.com/DrummerHead/
+        - folder 1
+        - folder 2
+      links:
+        - http://mcdlr.com/8/
+        - http://mcdlr.com/wai-aria-cheatsheet/
+      keywords:
+        - versionar
+        - git
+        - Github
+        - Markdown
+        - hover
+        - active
+        - thumbnail
+        - viewport
+        - Integrated Development Environment
+        - hooks
+        - localhost
+        - root
+      comments: disqus
+    pizzatio_02:
+      metadata:
+        page_title: Comenzando CSS
+        url: comenzando-css
+        number: "12"
+      video_url: 5qu9VpScAYs
+      description: Definimos las diferentes areas de nuestro CSS para una mejor organización, definimos imagenes de fondo y colores, estructuramos el Header de nuestro sitio.
+      code_url:
+        - https://github.com/DrummerHead/
+        - folder 3
+      links:
+        - http://mcdlr.com/pangram-ipsum/
+        - http://gruntjs.com/
+        - http://www.sass-lang.com/guide#topic-7
+      keywords:
+        - Grunt
+        - concatenación
+        - minificación
+        - "@extend Sass"
+        - CSS Preprocessor
+        - self enclosing structures
+        - path relativo
+        - gaussian blur
+        - optimización prematura
+        - Retina
+        - alta densidad pixelar
+        - iterar
+      comments: disqus
