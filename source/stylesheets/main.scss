@@ -268,11 +268,11 @@ article header {
 }
 article header h1 {
   display: block;
-  margin-top: .42em;
-  padding-right: .75em;
+  margin-top: .3525em;
+  padding-right: .9em;
 }
 
-$small-size: 2.5em;
+$small-size: 2.375em;
 h1 small {
   background-color: $light-blue;
   color: $blue-harsh;
@@ -281,9 +281,9 @@ h1 small {
   height: $small-size;
   line-height: $small-size;
   position: absolute;
-  right: -3.1em;
+  right: -2.9em;
   text-align: center;
-  text-indent: -2.9em;
+  text-indent: -2.85em;
   top: 0;
   width: $small-size * 2;
 }
