@@ -10,7 +10,7 @@
         = "&#9656; #{page_title}"
       %small= number
   %section#video
-    = image_tag "http://placehold.it/700x400&text=video"
+    %iframe{ src: "//www.youtube.com/embed/#{video_url}", frameborder: 0, allowfullscreen: true }
     %small
       1080 y audifonos recomendado
   %section#details
