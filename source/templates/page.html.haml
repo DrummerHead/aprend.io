@@ -29,17 +29,18 @@
           = link_to link, link
 
     %h2 Keywords
-    %ul
+    %ul.keywords
       - keywords.each do |keyword|
         %li= keyword
+
+    %ul.pagination
+      - if previous_page
+        %li.prev
+          = link_to "&#10092; Anterior", previous_page, { class: 'button', rel: 'prev'}
+      - if next_page
+        %li.next
+          = link_to "Siguiente &#10093;", next_page, { class: 'button', rel: 'next'}
 
   %section#comments
     %p this is the comments area
 
-%ul
-  - if previous_page
-    %li
-      = link_to "Previous", previous_page
-  - if next_page
-    %li
-      = link_to "Next", next_page

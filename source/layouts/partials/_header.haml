@@ -14,6 +14,8 @@
               - subject_data.children.each do |page, page_data|
                 %li
                   = link_to page_data.metadata.page_title, "/" + subject_data.metadata.url + "/" + page_data.metadata.url
+      %li
+        = link_to "Acerca", "/acerca"
 
   .social
     %ol

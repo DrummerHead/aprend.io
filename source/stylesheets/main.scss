@@ -87,19 +87,17 @@ summary {
 a {
   color: saturate(darken($light-blue, 45), 60);
   @include transition(200ms);
-}
-a:active,
-a:hover {
-  outline: 0;
-}
-a:hover {
-  padding: .1em 0;
-  color: saturate(darken($light-blue, 35), 70);
-  background-color: $rust-harsh;
-  text-decoration: none;
-}
-a:active {
-  background-color: $light-blue-harsh;
+
+  &:hover {
+    padding: .1em 0;
+    color: saturate(darken($light-blue, 35), 70);
+    background-color: $rust-harsh;
+    text-decoration: none;
+    outline: 0;
+  }
+  &:active {
+    background-color: $light-blue-harsh;
+  }
 }
 abbr[title] {
   border-bottom: 1px dotted;
@@ -117,12 +115,19 @@ h1 {
 }
 h2 {
   font-size: 2.2em;
+  margin: 1.25em 0 .5em;
 }
 img {
   max-width: 100%;
 }
 small {
   font-size: .8em;
+}
+ul,
+ol {
+  padding: 0 0 0 1.25em;
+  margin: 1em 0;
+  list-style-position: outside;
 }
 nav ol,
 nav ul {
@@ -186,9 +191,10 @@ nav ul {
   width: 277px;
   padding: 1em 0;
   background-color: transparent;
-}
-.brand a:hover {
-  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+  }
 }
 .brand img {
   display: block;
@@ -247,10 +253,6 @@ nav ul {
   background-color: $rust;
   overflow: hidden;
 }
-
-
-
-
 /* end Persistent */
 
 
@@ -260,6 +262,31 @@ nav ul {
  * Modular
  * ========================== */
 
+.button {
+  display: inline-block;
+  padding: .75em 1.25em;
+  border-bottom: .25em solid lighten($blue-harsh, 20);
+  text-align: center;
+  background-color: $blue-harsh;
+  color: #fff;
+  font-family: Gotham, Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  @include transition(200ms);
+
+  &:hover{
+    color: #fff;
+    background-color: darken($blue-harsh, 20);
+    border-color: $blue-harsh;
+    padding: .75em 1.25em;
+  }
+
+  &:active {
+    border-width: 0;
+    margin-top: .25em;
+  }
+}
+
 article {
 }
 article header {
@@ -267,6 +294,7 @@ article header {
 article header h1 {
   display: block;
   margin-top: .3525em;
+  margin-bottom: .7em;
   padding-right: .9em;
 }
 
@@ -286,6 +314,39 @@ h1 small {
   width: $small-size * 2;
 }
 
+.keywords {
+  @extend .clearfix;
+  @extend .unstyle-list;
+  margin-left: -.2em
+}
+.keywords li {
+  float: left;
+  padding: .1em .5em;
+  margin: .2em;
+  background-color: $rust-harsh;
+  border-radius: 0.3em;
+  text-shadow: .05em .05em 0 rgba($rust, .4);
+}
+
+.pagination {
+  margin: 2em 0;
+  @extend .unstyle-list;
+  @extend .clearfix;
+}
+.pagination li {
+}
+.pagination li a {
+}
+.pagination .prev {
+  float: left;
+}
+.pagination .prev a {
+}
+.pagination .next {
+  float: right;
+}
+.pagination .next a {
+}
 /* end Modular */
 
 
