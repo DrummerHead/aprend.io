@@ -5,6 +5,7 @@
  * Color scheme
  * ========================== */
 
+$honorable-black: #222;
 $light-blue: #b5d5e1;
 $light-blue-harsh: #73a8b6;
 $blue-harsh: #4387a0;
@@ -37,6 +38,13 @@ $blood-harsh: #d52b08;
        -o-transition: all $length ease-out;
           transition: all $length ease-out;
 }
+
+.unstyle-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* end Mixins, helpers */
 
 
@@ -50,7 +58,7 @@ html {
   font-size: 1.4em;
   line-height: 1.4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222;
+  color: $honorable-black;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -116,6 +124,10 @@ img {
 small {
   font-size: .8em;
 }
+nav ol,
+nav ul {
+  @extend .unstyle-list;
+}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -160,12 +172,22 @@ small {
   padding: 1em 1em;
   background-color: $light-blue;
 }
+[role='banner'],
+[role='banner'] a {
+  color: saturate(darken($light-blue, 60), 50);
+}
+[role='banner'] a:hover {
+  background-color: lighten($light-blue, 12);
+}
 .brand {
 }
 .brand a {
   display: block;
   width: 277px;
   padding: 1em 0;
+  background-color: transparent;
+}
+.brand a:hover {
   background-color: transparent;
 }
 .brand img {
@@ -179,14 +201,18 @@ small {
 .brand small {
 }
 [role='banner'] > nav {
+  margin: 1.2em 0;
 }
 [role='navigation'] {
 }
 [role='navigation'] li {
 }
 [role='navigation'] a {
+  text-decoration: none;
 }
 [role='navigation'] ol {
+  margin: 0 0 .5em 1.2em;
+  font-size: .85em;
 }
 [role='navigation'] > li {
 }
@@ -195,14 +221,25 @@ small {
 [role='navigation'] ol li a {
 }
 .social {
+  font-size: 2em;
+  line-height: 1;
+  text-align: center;
 }
 .social ol {
+  @extend .unstyle-list;
+  @extend .clearfix;
+  display: inline-block;
 }
 .social li {
+  float: left;
+  margin: 0 .28em;
 }
 .social a {
+  padding: .25em;
+  display: block;
 }
 .social img {
+  display: block;
 }
 
 [role='main'] {
