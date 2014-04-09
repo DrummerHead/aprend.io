@@ -2,7 +2,7 @@
 
 %h1= subject_title
 
-%ul.video-list
+%ol.video-list{ start: pages.values.first.metadata.number }
   - pages.each do |page, page_data|
     %li
       = link_to "#{subject_url}/#{page_data.metadata.url}" do
