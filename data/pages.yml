@@ -39,7 +39,7 @@ HTML:
         url: introduccion
         number: "02"
       video_url: hpdPOFSGOGo
-      description: Comenzamos con una definición de HTML y continuamos con una analogía para entender conceptos de propiedades, anidación e indentación. Vemos posibles editores de texto para comenzar a escribir código, hablamos del DOCTYPE y vemos la estructúra básica de un documento HTML5.
+      description: Comenzaremos con una definición de html y continuamos con una analogía para entender conceptos de propiedades, anidación e indentación. Veremos posibles editores de texto para comenzar a escribir código, hablaremos del DOCTYPE y veremos la estructúra básica de un documento HTML5.
       code_url:
         - https://github.com/DrummerHead/
       links:
@@ -82,7 +82,7 @@ HTML:
         url: semantica
         number: "03"
       video_url: 07L0sk2J5e4
-      description: Vemos elementos basicos de HTML y explicamos la diferencia entre el paradigma "Word" basado en apariencia y el paradigma de semantica que usamos en HTML. Comenzamos a editar un archivo de texto como HTML, vemos anchor e imagenes, explicamos la diferencia entre el rol de una imagen como contenido y como factor estetico. NOTA encontrar una forma consistente de escribir esto, creo que los tiempos no estan encarando
+      description: Veremos elementos basicos de HTML y explicaremos la diferencia entre el paradigma "Word" basado en apariencia y el paradigma de semantica que usamos en HTML. Comenzamos a editar un archivo de texto como HTML, veremos anchor e imagenes, explicaremos la diferencia entre el rol de una imagen como contenido y como factor estetico.
       code_url:
         - https://github.com/DrummerHead/
       links:
@@ -116,6 +116,60 @@ HTML:
         - estética
         - web developer tools
         - developer console
+    NOME:
+      metadata:
+        page_title: Elementos
+        url: elementos
+        number: "04"
+      video_url: yQdtN0dL-f8
+      description: Recorreremos los elementos mas destacables de HTML5 y describiremos su anatomía y comportamineto y utilización.
+      code_url:
+        - https://github.com/DrummerHead/
+        - codigo renderizable en coso
+      links:
+        - https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+        - http://mcdlr.com/wai-aria-cheatsheet/
+      keywords:
+        - secciones y estructura
+        - contenedor genérico
+        - elemento de bloque
+        - enclosure
+        - inline
+        - sindicación web
+        - grupos y listas
+        - unordered list
+        - ordered list
+        - definition list
+        - definition title
+        - definition data
+        - semánticamente rico
+        - hooks
+        - semántica de texto
+        - abbreviation
+        - overlay
+        - tooltip
+        - gontenido incrustado
+        - crawlers
+        - keywords
+        - search engines
+        - cache
+        - nativa
+        - API
+        - user interface chrome
+        - WebGL
+        - datos tabulares
+        - formularios
+        - validación
+        - expresión regular
+        - eavesdropping
+        - dropdown
+        - widget
+        - essay
+        - tweak
+        - layout
+        - void elements
+        - ":nth-child pseudo-selector"
+        - break
 CSS:
   metadata:
     page_title: CSS
@@ -127,7 +181,7 @@ CSS:
         url: introduccion
         number: "05"
       video_url: SAxg6Sqicgw
-      description: Analizamos la estructura basica de un selector, su sintaxis y componentes; explicamos clases & id. Modificamos documentos de capitulos anteriores y vemos como CSS puede modificar el aspecto de nuestros documentos
+      description: Analizaremos la estructura basica de un selector, su sintaxis y componentes; explicamos clases & id. Modificaremos documentos de capitulos anteriores y veremos como CSS puede modificar el aspecto de nuestros documentos
       code_url:
         - https://github.com/DrummerHead/
       links:
@@ -153,7 +207,7 @@ CSS:
         url: propiedades-de-texto
         number: "06"
       video_url: 5tzkmTmfRKQ
-      description:
+      description: Veremos la mayoría de las propiedades CSS relacionadas a la edición de texto
       code_url:
         - https://github.com/DrummerHead/
         - https://aprend.io/propiedades-de-texto/propiedades-css-relacionadas-a-texto
@@ -185,6 +239,62 @@ CSS:
         - thumbnail
         - gaussian blur
         - kerning
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "07"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "08"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "09"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "10"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
 Proyecto:
   metadata:
     page_title: Pizzatio
@@ -196,7 +306,7 @@ Proyecto:
         url: estructura-basica
         number: "11"
       video_url: FgR9KAmcZOU
-      description: Comenzamos un projecto de ejemplo, Pizzatio, que es una página de una pizzería. Vemos una estructura básica HTML de inicio asi como una estructura de carpetas para poder comenzar a construir nuestro sitio.
+      description: Comenzaremos un projecto de ejemplo, Pizzatio, que es el sitio de una pizzería. Veremos una estructura básica HTML de inicio asi como una estructura de carpetas para poder comenzar a construir nuestro sitio.
       code_url:
         - https://github.com/DrummerHead/
         - folder 1
@@ -223,7 +333,7 @@ Proyecto:
         url: comenzando-css
         number: "12"
       video_url: 5qu9VpScAYs
-      description: Definimos las diferentes areas de nuestro CSS para una mejor organización, definimos imagenes de fondo y colores, estructuramos el Header de nuestro sitio.
+      description: Definiremos las diferentes areas de nuestro CSS para mejor organización, definiremos imagenes de fondo y colores, estructuraremos el Header de nuestro sitio.
       code_url:
         - https://github.com/DrummerHead/
         - folder 3
@@ -244,3 +354,59 @@ Proyecto:
         - Retina
         - alta densidad pixelar
         - iterar
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "13"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "14"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "15"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
+    NOME:
+      metadata:
+        page_title: 
+        url: 
+        number: "16"
+      video_url: 
+      description: 
+      code_url:
+        - https://github.com/DrummerHead/
+        - 
+      links:
+        - 
+      keywords:
+        - 
