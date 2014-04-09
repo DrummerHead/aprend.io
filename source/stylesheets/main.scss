@@ -248,11 +248,25 @@ nav ul {
 
 [role='main'] {
   position: relative;
-  margin: 0 0 0 14.3em;
+  margin: 0 0 0 14.375em;
   padding: 1em 2.5em;
   background-color: $rust;
   overflow: hidden;
 }
+
+#noscript-warning {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #ffdd32;
+  text-align: center;
+}
+#noscript-warning p {
+  margin: 0;
+}
+
 /* end Persistent */
 
 

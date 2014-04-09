@@ -1,4 +1,5 @@
 - content_for(:subject_title, subject_title)
+- content_for(:page_id, number)
 - if page_title != nil
   - content_for(:page_title, page_title)
 
@@ -42,5 +43,5 @@
           = link_to "Siguiente &#10093;", next_page, { class: 'button', rel: 'next'}
 
   %section#comments
-    %p this is the comments area
-
+    %h2 Comentarios
+    #disqus_thread
