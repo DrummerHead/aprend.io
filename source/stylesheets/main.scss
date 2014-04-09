@@ -259,19 +259,30 @@ nav ul {
   overflow: hidden;
 }
 
+#browsehappy,
 #noscript-warning {
   position: fixed;
   right: 0;
-  bottom: 0;
   left: 0;
   padding: 1em;
-  background-color: #ffdd32;
+  z-index: 100;
   text-align: center;
+  background-color: #ffdd32;
 }
+#browsehappy {
+  top: 0;
+}
+#noscript-warning {
+  bottom: 0;
+}
+#browsehappy p,
 #noscript-warning p {
   margin: 0;
 }
-
+#browsehappy + [role='banner'],
+#browsehappy + [role='banner'] + [role='main'] {
+  margin-top: 3.42em;
+}
 /* end Persistent */
 
 
