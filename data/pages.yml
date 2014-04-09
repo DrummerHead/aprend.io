@@ -185,7 +185,7 @@ CSS:
       code_url:
         - https://github.com/DrummerHead/
       links:
-        -
+        - https://developer.mozilla.org/en-US/docs/Web/CSS
       keywords:
         - keywords
         - firebug
@@ -277,6 +277,7 @@ CSS:
         - el coso que tiene los ejemplos de layout
       links:
         - http://csszengarden.com/
+        - https://developer.mozilla.org/en-US/docs/tag/CSS%20Positioning
       keywords:
         - rabbit holes
         - wireframe
@@ -287,20 +288,37 @@ CSS:
         - flow
         - "position: absolute;"
         - "position: fixed;"
-    NOME:
+    Float:
       metadata:
-        page_title: 
-        url: 
+        page_title: Float
+        url: float
         number: "09"
-      video_url: 
-      description: 
+      video_url: CVgI2d5Pc7M
+      description: Veremos como usar CSS floats para generar columnas y grupos de elementos que coexisten continuamente
       code_url:
         - https://github.com/DrummerHead/
-        - 
+        - cositines varios de float
+        - el coso de las columnas
       links:
-        - 
+        - https://developer.mozilla.org/en-US/docs/Web/CSS/float
+        - http://foundation.zurb.com/
+        - http://getbootstrap.com/
       keywords:
-        - 
+        - precedencia
+        - "Don't Repeat Yourself"
+        - pseudoselectores
+        - clearfix
+        - side effects
+        - SASS @extend
+        - "box-sizing: border-box;"
+        - universal selector
+        - Bootstrap
+        - Zurb Foundation
+        - vendor prefixes
+        - Gecko
+        - WebKit
+        - Trident
+        - grids
     NOME:
       metadata:
         page_title: 
