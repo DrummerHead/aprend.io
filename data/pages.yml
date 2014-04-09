@@ -116,7 +116,7 @@ HTML:
         - estética
         - web developer tools
         - developer console
-    NOME:
+    elementos:
       metadata:
         page_title: Elementos
         url: elementos
@@ -239,20 +239,32 @@ CSS:
         - thumbnail
         - gaussian blur
         - kerning
-    NOME:
+    box_model:
       metadata:
-        page_title: 
-        url: 
+        page_title: Box Model
+        url: box-model
         number: "07"
-      video_url: 
-      description: 
+      video_url: hPo0pKkEoHs
+      description: Veremos las propiedades CSS relacionadas al Box Model o "Modelo de Caja"
       code_url:
         - https://github.com/DrummerHead/
-        - 
       links:
-        - 
+        - https://developer.mozilla.org/en-US/docs/Web/CSS/box_model
       keywords:
-        - 
+        - display block
+        - display inline
+        - width
+        - height
+        - analogía
+        - contenido
+        - padding
+        - border
+        - margin
+        - viewport
+        - scrollbars
+        - shorthand
+        - clockwise
+        - wireframe
     NOME:
       metadata:
         page_title: 
