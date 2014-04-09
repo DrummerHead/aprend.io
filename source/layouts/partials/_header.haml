@@ -8,12 +8,12 @@
     %ol{ role: "navigation" }
       - data.pages.each do |subject, subject_data|
         %li
-          = link_to subject_data.metadata.page_title, "/" + subject_data.metadata.url
+          = link_to subject_data.metadata.page_title, "/#{subject_data.metadata.url}"
           - if subject_data.children
             %ol
               - subject_data.children.each do |page, page_data|
                 %li
-                  = link_to page_data.metadata.page_title, "/" + subject_data.metadata.url + "/" + page_data.metadata.url
+                  = link_to page_data.metadata.page_title, "/#{subject_data.metadata.url}/#{page_data.metadata.url}"
       %li
         = link_to "Acerca", "/acerca"
 

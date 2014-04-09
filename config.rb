@@ -55,7 +55,6 @@ data.pages.each do |subject, subject_data|
       code_url: subject_data.code_url,
       links: subject_data.links,
       keywords: subject_data.keywords,
-      comments: subject_data.comments,
       previous_page: pages_for_pagination_index > 0 ? pages_for_pagination[pages_for_pagination_index-1] || nil : nil,
       next_page: pages_for_pagination[pages_for_pagination_index+1] || nil
     }, ignore: true
@@ -64,6 +63,7 @@ data.pages.each do |subject, subject_data|
   else
     proxy "/#{subject_data.metadata.url}/index.html", "/templates/subject.html", locals: {
       subject_title: subject_data.metadata.page_title,
+      subject_url: subject_data.metadata.url,
       pages: subject_data.children
     }, ignore: true
 
@@ -77,7 +77,6 @@ data.pages.each do |subject, subject_data|
         code_url: page_data.code_url,
         links: page_data.links,
         keywords: page_data.keywords,
-        comments: page_data.comments,
         previous_page: pages_for_pagination_index > 0 ? pages_for_pagination[pages_for_pagination_index-1] || nil : nil,
         next_page: pages_for_pagination[pages_for_pagination_index+1] || nil
       }, ignore: true

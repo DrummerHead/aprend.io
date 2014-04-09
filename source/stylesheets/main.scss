@@ -45,6 +45,11 @@ $blood-harsh: #d52b08;
   padding: 0;
 }
 
+.gotham-font {
+  font-family: Gotham, Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+
 /* end Mixins, helpers */
 
 
@@ -106,11 +111,11 @@ h1,
 h2 {
   margin: .5em 0;
   line-height: 1;
-  font-family: Gotham, Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  @extend .gotham-font;
 }
 h1 {
   font-size: 3em;
+  margin: .3525em 0 .7em;
   text-transform: uppercase;
 }
 h2 {
@@ -283,9 +288,9 @@ nav ul {
   text-align: center;
   background-color: $blue-harsh;
   color: #fff;
-  font-family: Gotham, Futura, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   cursor: pointer;
+  @extend .gotham-font;
   @include transition(200ms);
 
   &:hover{
@@ -307,25 +312,18 @@ article header {
 }
 article header h1 {
   display: block;
-  margin-top: .3525em;
-  margin-bottom: .7em;
   padding-right: .9em;
 }
 
-$small-size: 2.375em;
-h1 small {
-  background-color: $light-blue;
-  color: $blue-harsh;
-  border-radius: $small-size;
-  font-size: 1em;
-  height: $small-size;
-  line-height: $small-size;
+$h1-nice-number-size: 2.375em;
+h1 .nice-number {
   position: absolute;
-  right: -2.9em;
-  text-align: center;
-  text-indent: -2.85em;
   top: 0;
-  width: $small-size * 2;
+  right: -2.9em;
+  width: $h1-nice-number-size * 2;
+  height: $h1-nice-number-size;
+  line-height: $h1-nice-number-size;
+  text-indent: -2.85em;
 }
 
 .keywords {
@@ -361,7 +359,64 @@ h1 small {
 }
 .pagination .next a {
 }
+
+.nice-number {
+  font-size: 1em;
+  background-color: $light-blue;
+  color: $blue-harsh;
+  border-radius: 777em;
+  text-align: center;
+  @extend .gotham-font;
+}
 /* end Modular */
+
+
+
+
+/*
+ * Specific page: Subject listing
+ * ========================== */
+
+$video-list-nice-number-size: 2.2em;
+
+.video-list {
+  @extend .unstyle-list;
+  font-size: 2.2em;
+}
+.video-list li {
+  margin: 1em 0;
+  line-height: $video-list-nice-number-size;
+}
+.video-list a {
+  display: block;
+  text-decoration: none;
+  @include transition(500ms);
+
+  &:hover {
+    padding: 0;
+    background-color: $light-blue;
+    color: $honorable-black;
+  }
+}
+.video-list img,
+.video-list .nice-number,
+.video-list strong {
+  display: inline-block;
+  vertical-align: middle;
+}
+.video-list img {
+  width: 240px;
+}
+.video-list .nice-number {
+  width: $video-list-nice-number-size;
+  height: $video-list-nice-number-size;
+  margin: 0 .2em;
+}
+.video-list strong {
+  @extend .gotham-font;
+}
+
+/* end Specific page: Subject listing */
 
 
 
