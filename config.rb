@@ -36,10 +36,10 @@ pages_for_pagination_index = 0
 
 data.pages.each do |subject, subject_data|
   if !subject_data.children
-    pages_for_pagination << "/#{subject_data.metadata.url}/index.html"
+    pages_for_pagination << "/#{subject_data.metadata.url}"
   else
     subject_data.children.each do |page, page_data|
-      pages_for_pagination << "/#{subject_data.metadata.url}/#{page_data.metadata.url}/index.html"
+      pages_for_pagination << "/#{subject_data.metadata.url}/#{page_data.metadata.url}"
     end
   end
 end

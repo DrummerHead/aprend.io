@@ -5,7 +5,7 @@
 %ol.video-list{ start: pages.values.first.metadata.number }
   - pages.each do |page, page_data|
     %li
-      = link_to "#{subject_url}/#{page_data.metadata.url}" do
+      = link_to "/#{subject_url}/#{page_data.metadata.url}" do
         = image_tag "http://img.youtube.com/vi/#{page_data.video_url}/0.jpg", {alt: "#{page_data.metadata.page_title} video thumbnail" }
         %small.nice-number= page_data.metadata.number
         %strong= page_data.metadata.page_title
