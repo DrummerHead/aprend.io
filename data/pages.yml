@@ -405,59 +405,80 @@ Proyecto:
         - Retina
         - alta densidad pixelar
         - iterar
-    NOME:
+    pizzatio_03:
       metadata:
-        page_title: 
-        url: 
+        page_title: Footer, grids, landing
+        url: footer-grids-landing
         number: "13"
-      video_url: 
-      description: 
+      video_url: xkJw-ONHJe4
+      description: TODO
       code_url:
         - https://github.com/DrummerHead/
-        - 
       links:
         - 
       keywords:
-        - 
-    NOME:
+        - refactorizar
+        - transform
+        - transform-origin
+        - rotate
+        - desktop first
+        - mobile first
+    pizzatio_04:
       metadata:
-        page_title: 
-        url: 
+        page_title: Acerca, Menu
+        url: acerca-menu
         number: "14"
-      video_url: 
-      description: 
+      video_url: 5qSM3GwTyRs
+      description: TODO
       code_url:
         - https://github.com/DrummerHead/
-        - 
       links:
-        - 
+        - http://validator.w3.org/
+        - http://www.whatwg.org/
+        - http://www.w3fools.com/
+        - https://developer.mozilla.org/
+        - http://mycroftproject.com/
       keywords:
-        - 
-    NOME:
+        - article
+        - Microformats
+        - vCard
+        - hCard
+        - column-count
+        - column-gap
+    pizzatio_05:
       metadata:
-        page_title: 
-        url: 
+        page_title: Galeria, algo de JS
+        url: galeria-js
         number: "15"
-      video_url: 
-      description: 
+      video_url: XlzG_X8z2mg
+      description: TODO
       code_url:
         - https://github.com/DrummerHead/
-        - 
       links:
-        - 
+        - https://developers.google.com/speed/pagespeed/
+        - https://developers.google.com/speed/pagespeed/insights/
+        - http://html5boilerplate.com/
       keywords:
-        - 
-    NOME:
+        - thumbnail
+        - Photoshop batch processing
+        - procesamiento por lotes
+        - modal window
+        - jQuery
+        - CDN
+        - Content Delivery Network
+        - browser caching
+    pizzatio_06:
       metadata:
-        page_title: 
-        url: 
+        page_title: Forms, refactor
+        url: forms-refactor
         number: "16"
-      video_url: 
-      description: 
+      video_url: Ex6R90KWLH0
+      description: TODO
       code_url:
         - https://github.com/DrummerHead/
-        - 
       links:
-        - 
+        - https://developers.google.com/maps/
       keywords:
-        - 
+        - naming conventions
+        - delimiter-separated
+        - CamelCase
