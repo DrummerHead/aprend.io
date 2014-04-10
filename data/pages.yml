@@ -125,7 +125,7 @@ HTML:
       description: Recorreremos los elementos mas destacables de HTML5 y describiremos su anatomía y comportamineto y utilización.
       code_url:
         - https://github.com/DrummerHead/
-        - codigo renderizable en coso
+        - /html/elementos/test
       links:
         - https://developer.mozilla.org/en-US/docs/Web/HTML/Element
         - http://mcdlr.com/wai-aria-cheatsheet/
