@@ -8,7 +8,6 @@ Introduccion:
   code_url:
     - https://github.com/DrummerHead/
   links:
-    - a leenk
   keywords:
     - publico objetivo
     - back-end
@@ -125,7 +124,7 @@ HTML:
       description: Recorreremos los elementos mas destacables de HTML5 y describiremos su anatomía y comportamineto y utilización.
       code_url:
         - https://github.com/DrummerHead/
-        - /html/elementos/test
+        - /html/elementos/test/
       links:
         - https://developer.mozilla.org/en-US/docs/Web/HTML/Element
         - http://mcdlr.com/wai-aria-cheatsheet/
@@ -184,6 +183,7 @@ CSS:
       description: Analizaremos la estructura basica de un selector, su sintaxis y componentes; explicamos clases & id. Modificaremos documentos de capitulos anteriores y veremos como CSS puede modificar el aspecto de nuestros documentos
       code_url:
         - https://github.com/DrummerHead/
+        - /css/introduccion/clases-id/
       links:
         - https://developer.mozilla.org/en-US/docs/Web/CSS
       keywords:
@@ -210,8 +210,8 @@ CSS:
       description: Veremos la mayoría de las propiedades CSS relacionadas a la edición de texto
       code_url:
         - https://github.com/DrummerHead/
-        - https://aprend.io/propiedades-de-texto/propiedades-css-relacionadas-a-texto
-        - https://aprend.io/propiedades-de-texto/tabla-de-herencia-css
+        - /css/propiedades-de-texto/propiedades-css-relacionadas-a-texto/
+        - /css/propiedades-de-texto/tabla-de-herencia-css/
       links:
         - http://mcdlr.com/responsive-web-design-presentation/
         - http://www.fonts.com/content/learning/fontology/level-1/type-families/about-typeface-families
@@ -274,7 +274,7 @@ CSS:
       description: Veremos las posibilidades que tenemos de cambiar la disposición (layout) de nuestros elementos con CSS para poder estar informados a la hora de pensar en la estructuración de nuestro documento
       code_url:
         - https://github.com/DrummerHead/
-        - el coso que tiene los ejemplos de layout
+        - /css/layout/ejemplos/
       links:
         - http://csszengarden.com/
         - https://developer.mozilla.org/en-US/docs/tag/CSS%20Positioning
@@ -297,8 +297,7 @@ CSS:
       description: Veremos como usar CSS floats para generar columnas y grupos de elementos que coexisten continuamente
       code_url:
         - https://github.com/DrummerHead/
-        - cositines varios de float
-        - el coso de las columnas
+        - /css/float/calcular-columnas/
       links:
         - https://developer.mozilla.org/en-US/docs/Web/CSS/float
         - http://foundation.zurb.com/
@@ -328,7 +327,6 @@ CSS:
       description: Veremos position, todos sus posibles valores y como podemos manipular el layout a nuestro favor.
       code_url:
         - https://github.com/DrummerHead/
-        - codigo a los cositines flotanes magicos
       links:
         - https://developer.mozilla.org/en-US/docs/Web/CSS/position
       keywords:
@@ -360,8 +358,6 @@ Proyecto:
       description: Comenzaremos un projecto de ejemplo, Pizzatio, que es el sitio de una pizzería. Veremos una estructura básica HTML de inicio asi como una estructura de carpetas para poder comenzar a construir nuestro sitio.
       code_url:
         - https://github.com/DrummerHead/
-        - folder 1
-        - folder 2
       links:
         - http://mcdlr.com/8/
         - http://mcdlr.com/wai-aria-cheatsheet/
@@ -387,7 +383,6 @@ Proyecto:
       description: Definiremos las diferentes areas de nuestro CSS para mejor organización, definiremos imagenes de fondo y colores, estructuraremos el Header de nuestro sitio.
       code_url:
         - https://github.com/DrummerHead/
-        - folder 3
       links:
         - http://mcdlr.com/pangram-ipsum/
         - http://gruntjs.com/
@@ -414,8 +409,8 @@ Proyecto:
       description: TODO
       code_url:
         - https://github.com/DrummerHead/
+        - /css/float/calcular-columnas/
       links:
-        - 
       keywords:
         - refactorizar
         - transform
