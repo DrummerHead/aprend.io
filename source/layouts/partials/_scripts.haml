@@ -3,7 +3,7 @@
   - if content_for?(:page_id)
     :javascript
       var disqus_identifier = '#{yield_content(:page_id)}';
-    = javascript_include_tag "//aprendio.disqus.com/embed.js", { async: true }
+    %script{ src: "//aprendio.disqus.com/embed.js", async: true }
   %noscript
     #noscript-warning
       :markdown
