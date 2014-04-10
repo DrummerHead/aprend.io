@@ -4,8 +4,8 @@
       = image_tag("/images/aprendio-logo.png", { alt: "aprend.io", class: "logo" })
       = image_tag("/images/aprendio-slogan.png", { alt: "COMIENZA A CREAR", class: "slogan" })
 
-  %nav
-    %ol{ role: "navigation" }
+  %nav{ role: "navigation" }
+    %ol
       - data.pages.each do |subject, subject_data|
         %li
           = link_to subject_data.metadata.page_title, "/#{subject_data.metadata.url}"

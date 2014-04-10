@@ -209,26 +209,17 @@ nav ul {
 }
 .brand .slogan {
 }
-[role='banner'] > nav {
-  margin: 1.2em 0;
-}
 [role='navigation'] {
-}
-[role='navigation'] li {
+  margin: 1.2em 0;
 }
 [role='navigation'] a {
   text-decoration: none;
 }
-[role='navigation'] ol {
+[role='navigation'] ol ol {
   margin: 0 0 .5em 1.2em;
   font-size: .85em;
 }
-[role='navigation'] > li {
-}
-[role='navigation'] ol li {
-}
-[role='navigation'] ol li a {
-}
+
 .social {
   font-size: 2em;
   line-height: 1;
