@@ -422,16 +422,21 @@ h1 .nice-number {
 }
 #landing [role='main'] {
   margin: 0;
+  padding-top: .6em;
   text-align: center;
   @extend .gotham-font;
 }
+#landing header {
+  padding: 1.25em 0 1.65em;
+  background-color: $light-blue;
+}
 #landing .brand {
   width: 416px;
-  margin: .4em auto 1.7em;
+  margin: 0 auto;
 }
 #landing .button-group {
   font-size: .75em;
-  margin: 2.5em 0;
+  margin: 2.5em 0 0;
 }
 #landing .button-group li {
   float: none;
