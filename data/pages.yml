@@ -319,20 +319,33 @@ CSS:
         - WebKit
         - Trident
         - grids
-    NOME:
+    Position:
       metadata:
-        page_title: 
-        url: 
+        page_title: Position
+        url: position
         number: "10"
-      video_url: 
-      description: 
+      video_url: F3s7rprnenc
+      description: Veremos position, todos sus posibles valores y como podemos manipular el layout a nuestro favor.
       code_url:
         - https://github.com/DrummerHead/
-        - 
+        - codigo a los cositines flotanes magicos
       links:
-        - 
+        - https://developer.mozilla.org/en-US/docs/Web/CSS/position
       keywords:
-        - 
+        - "position: absolute;"
+        - "position: relative;"
+        - "position: static;"
+        - "position: fixed;"
+        - "top: 1em;"
+        - "right: 1em;"
+        - "bottom: 1em;"
+        - "left: 1em;"
+        -  "z-index"
+        - integer
+        - floating point
+        - stack
+        - viewport
+        - sticky header
 Proyecto:
   metadata:
     page_title: Pizzatio
