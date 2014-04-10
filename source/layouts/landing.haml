@@ -1,0 +1,9 @@
+!!! 5
+%html
+  %head
+    = partial "layouts/partials/head"
+  %body#landing
+    = partial "layouts/partials/browsehappy"
+    %main{ role: "main" }
+      = yield
+    = partial "layouts/partials/scripts"

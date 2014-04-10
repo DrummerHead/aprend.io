@@ -29,6 +29,7 @@
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
 
+page "/index.html", :layout => :landing
 
 pages_for_pagination = []
 pages_for_pagination_index = 0

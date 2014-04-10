@@ -64,6 +64,7 @@ html {
   line-height: 1.4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $honorable-black;
+  background-color: $rust;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -121,6 +122,9 @@ h1 {
 h2 {
   font-size: 2.2em;
   margin: 1.25em 0 .5em;
+}
+p {
+  margin: 1em 0;
 }
 img {
   max-width: 100%;
@@ -189,26 +193,17 @@ nav ul {
 [role='banner'] a:hover {
   background-color: lighten($light-blue, 12);
 }
-.brand {
-}
-.brand a {
-  display: block;
+[role='banner'] .brand {
   width: 277px;
+}
+[role='banner'] .brand a {
   padding: 1em 0;
-  background-color: transparent;
 
   &:hover {
-    background-color: transparent;
+    padding: 1em 0;
   }
 }
-.brand img {
-  display: block;
-}
-.brand .logo {
-  margin: 0 0 .3em 0;
-}
-.brand .slogan {
-}
+
 [role='navigation'] {
   margin: 1.2em 0;
 }
@@ -307,6 +302,45 @@ nav ul {
     margin-top: .25em;
   }
 }
+.button-group {
+  @extend .clearfix;
+  @extend .unstyle-list;
+}
+.button-group li {
+  float: left;
+  margin: 0 .5em;
+  padding: .1em 0;
+  vertical-align: top;
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.button-group .button {
+}
+
+.brand {
+}
+.brand a {
+  display: block;
+  background-color: transparent;
+
+  &:hover {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+.brand img {
+  display: block;
+}
+.brand .logo {
+  margin: 0 0 .3em 0;
+}
+.brand .slogan {
+}
 
 article {
 }
@@ -376,6 +410,36 @@ h1 .nice-number {
 
 
 /*
+ * Specific page: Landing
+ * ========================== */
+
+#landing {
+  font-size: 2.2em;
+}
+#landing [role='main'] {
+  margin: 0;
+  text-align: center;
+  @extend .gotham-font;
+}
+#landing .brand {
+  width: 416px;
+  margin: .4em auto 1.7em;
+}
+#landing .button-group {
+  font-size: .75em;
+  margin: 2.5em 0;
+}
+#landing .button-group li {
+  float: none;
+  display: inline-block;
+}
+
+/* end Specific page: Landing */
+
+
+
+
+/*
  * Specific page: Subject listing
  * ========================== */
 
@@ -439,15 +503,6 @@ $video-list-nice-number-size: 2.2em;
   font-size: .75em;
 }
 /* end Specific page: Video page, content */
-
-
-
-
-/*
- * Specific page: x
- * ========================== */
-
-/* end Specific page: x */
 
 
 

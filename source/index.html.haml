@@ -1,6 +1,13 @@
----
-title: aprend.io
----
+.brand
+  = link_to "/introduccion" do
+    = image_tag("/images/aprendio-logo.png", { alt: "aprend.io", class: "logo" })
+    = image_tag("/images/aprendio-slogan.png", { alt: "comienza a crear", class: "slogan" })
 
-%h1 aprend.io
-%p this is going to be the content of the landing page, I think this one shouldn't contain the general layout, mmmmkay?
+%p Aprende Front-End (HTML &#38; CSS) de forma gratuita y en Español
+%p Deja de ser solo un usuario y conviertete en un creador!
+
+%ol.button-group
+  %li
+    = link_to "Averigua más", "/acerca", { class: "button" }
+  %li
+    = link_to "Comienza a aprender! &#9656;", "/introduccion", { class: "button" }
