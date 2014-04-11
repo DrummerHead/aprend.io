@@ -108,7 +108,11 @@ end
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-activate :livereload
+activate :livereload do |livereload|
+  livereload.host = Socket.ip_address_list.detect{|intf| intf.ipv4_private?}.ip_address
+end
+
+
 
 # Methods defined in the helpers block are available in templates
 # helpers do
