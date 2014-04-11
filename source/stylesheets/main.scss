@@ -23,13 +23,26 @@ $blood-harsh: #d52b08;
  * Mixins, helpers
  * ========================== */
 
-.clearfix:before,
-.clearfix:after {
-  content: '';
-  display: table;
+.clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
-.clearfix:after {
-  clear: both;
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 @mixin transition($length) {
@@ -179,12 +192,14 @@ nav ul {
  * ========================== */
 
 [role='banner'] {
+  width: 14.375em;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   padding: 1em 1em;
   background-color: $light-blue;
+  @extend .clearfix;
 }
 [role='banner'],
 [role='banner'] a {
@@ -194,7 +209,7 @@ nav ul {
   background-color: lighten($light-blue, 12);
 }
 [role='banner'] .brand {
-  width: 277px;
+  width: 100%;
 }
 [role='banner'] .brand a {
   padding: 1em 0;
@@ -222,15 +237,13 @@ nav ul {
 }
 .social ol {
   @extend .unstyle-list;
-  @extend .clearfix;
-  display: inline-block;
 }
 .social li {
-  float: left;
-  margin: 0 .28em;
+  display: inline-block;
+  margin: 0 1.7%;
 }
 .social a {
-  padding: .25em;
+  padding: 7% 14%;
   display: block;
 }
 .social img {
@@ -432,7 +445,7 @@ h1 .nice-number {
   background-color: $light-blue;
 }
 #landing .brand {
-  width: 416px;
+  width: 8.44em;
   margin: 0 auto;
 }
 #landing .button-group {
@@ -520,6 +533,97 @@ $video-list-nice-number-size: 2.2em;
 /*
  * Media queries
  * ========================== */
+
+@media (max-width: 1320px){
+  html {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 1240px){
+  html {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 1000px){
+  [role='banner'] {
+    width: auto;
+    position: static;
+    padding: .4em 1.5em;
+  }
+  [role='banner'] .brand {
+    float: left;
+    width: 7em;
+  }
+  [role='banner'] .brand a {
+    padding: .24em 0;
+
+    &:hover {
+      padding: .24em 0;
+    }
+  }
+  [role='banner'] .brand .logo {
+    margin: 0;
+  }
+  [role='banner'] .brand .slogan {
+    display: none;
+  }
+  [role='navigation'] {
+    float: right;
+    margin: 0 2.25em 0 0;
+  }
+  [role='navigation'] > ol {
+    @include clearfix();
+  }
+  [role='navigation'] > ol > li {
+    float: left;
+    position: relative;
+  }
+  [role='navigation'] > ol > li > a {
+    display: block;
+    padding: .4em .7em;
+  }
+  [role='navigation'] .has-submenu > a:after {
+    content: '\25be';
+    margin: 0 0 0 .25em;
+    display: inline-block;
+  }
+  [role='navigation'] ol ol {
+    display: none;
+    position: absolute;
+    top: 2.6em;
+    right: 0;
+    min-width: 11.2em;
+    padding: 0 0 0.4em;
+    z-index: 777;
+    text-align: right;
+    background-color: $light-blue;
+  }
+  [role='navigation'] .has-submenu:hover ol {
+    display: block;
+  }
+  [role='navigation'] ol ol a {
+    display: block;
+    padding: .25em .75em;
+  }
+
+  .social {
+    position: absolute;
+    top: .15em;
+    right: .15em;
+  }
+  .social li {
+    margin: 0;
+  }
+  .social .github,
+  .social .download {
+    display: none;
+  }
+
+  [role='main'] {
+    margin: 0;
+    padding: 1em 1.5em;
+  }
+}
 
 /* end Media queries */
 

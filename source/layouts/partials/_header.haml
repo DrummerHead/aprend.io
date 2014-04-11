@@ -7,7 +7,7 @@
   %nav{ role: "navigation" }
     %ol
       - data.pages.each do |subject, subject_data|
-        %li
+        %li{ class: (subject_data.children ? "has-submenu" : nil) }
           = link_to subject_data.metadata.page_title, "/#{subject_data.metadata.url}"
           - if subject_data.children
             %ol
@@ -19,12 +19,12 @@
 
   .social
     %ol
-      %li
+      %li.twitter
         = link_to "https://twitter.com/DrummerHead" do
           %span.fa.fa-twitter
-      %li
+      %li.github
         = link_to "https://github.com/DrummerHead/aprend.io-code" do
           %span.fa.fa-github
-      %li
+      %li.download
         = link_to "https://github.com/DrummerHead/aprend.io-code/archive/master.zip" do
           %span.fa.fa-download
