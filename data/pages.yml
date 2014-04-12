@@ -4,7 +4,7 @@ Introduccion:
     url: introduccion
     number: "01"
   video_url: tJvvwRMQNAo
-  description: Introducción a la serie de videos que componen este curso de Front-End. Vamos a hablar también de la teoría detras de crear un producto y de como crear HTML y CSS no es un fin en si mismo sino que es una forma de poder transmitir una idea y resolver un problema. Breve introducción a la crearción de wireframes.
+  description: Introducción a la serie de videos que componen este curso de Front-End. Vamos a hablar también de la teoría detrás de crear un producto y de como crear HTML y CSS no es un fin en si mismo sino que es una forma de poder transmitir una idea y resolver un problema. Breve introducción a la creación de wireframes.
   code_url:
     - https://github.com/DrummerHead/aprend.io-code/tree/master/01-introduccion
   links:
@@ -38,7 +38,7 @@ HTML:
         url: introduccion
         number: "02"
       video_url: hpdPOFSGOGo
-      description: Comenzaremos con una definición de html y continuamos con una analogía para entender conceptos de propiedades, anidación e indentación. Veremos posibles editores de texto para comenzar a escribir código, hablaremos del DOCTYPE y veremos la estructúra básica de un documento HTML5.
+      description: Comenzaremos con una definición de html y continuamos con una analogía para entender conceptos de propiedades, anidación e indentación. Veremos posibles editores de texto para comenzar a escribir código, hablaremos del DOCTYPE y veremos la estructura básica de un documento HTML5.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/02-html-introduccion
       links:
@@ -81,7 +81,7 @@ HTML:
         url: semantica
         number: "03"
       video_url: 07L0sk2J5e4
-      description: Veremos elementos basicos de HTML y explicaremos la diferencia entre el paradigma "Word" basado en apariencia y el paradigma de semantica que usamos en HTML. Comenzamos a editar un archivo de texto como HTML, veremos anchor e imagenes, explicaremos la diferencia entre el rol de una imagen como contenido y como factor estetico.
+      description: Veremos elementos básicos de HTML y explicaremos la diferencia entre el paradigma "Word" basado en apariencia y el paradigma de semántica que usamos en HTML. Comenzamos a editar un archivo de texto como HTML, veremos anchor e imágenes, explicaremos la diferencia entre el rol de una imagen como contenido y como factor estético.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/03-html-semantica
       links:
@@ -121,7 +121,7 @@ HTML:
         url: elementos
         number: "04"
       video_url: yQdtN0dL-f8
-      description: Recorreremos los elementos mas destacables de HTML5 y describiremos su anatomía y comportamineto y utilización.
+      description: Recorreremos los elementos mas destacables de HTML5 y describiremos su anatomía, comportamiento y utilización.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/04-html-elementos
         - /html/elementos/test/
@@ -180,7 +180,7 @@ CSS:
         url: introduccion
         number: "05"
       video_url: SAxg6Sqicgw
-      description: Analizaremos la estructura basica de un selector, su sintaxis y componentes; explicamos clases & id. Modificaremos documentos de capitulos anteriores y veremos como CSS puede modificar el aspecto de nuestros documentos
+      description: "Analizaremos la estructura básica de un selector, su sintaxis y componentes; explicamos clases & id. Modificaremos documentos de capítulos anteriores y veremos como CSS puede modificar el aspecto de nuestros documentos."
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/05-css-introduccion
         - /css/introduccion/clases-id/
@@ -355,7 +355,7 @@ Proyecto:
         url: estructura-basica
         number: "11"
       video_url: FgR9KAmcZOU
-      description: Comenzaremos un projecto de ejemplo, Pizzatio, que es el sitio de una pizzería. Veremos una estructura básica HTML de inicio asi como una estructura de carpetas para poder comenzar a construir nuestro sitio.
+      description: Comenzaremos un proyecto de ejemplo, Pizzatio, que es el sitio de una pizzeria. Veremos una estructura básica HTML de inicio así como una estructura de carpetas para poder comenzar a construir nuestro sitio.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/11-pizzatio-estructura-basica
       links:
@@ -380,7 +380,7 @@ Proyecto:
         url: comenzando-css
         number: "12"
       video_url: 5qu9VpScAYs
-      description: Definiremos las diferentes areas de nuestro CSS para mejor organización, definiremos imagenes de fondo y colores, estructuraremos el Header de nuestro sitio.
+      description: Definiremos las diferentes áreas de nuestro CSS para mejor organización, definiremos imágenes de fondo y colores, estructuraremos el Header de nuestro sitio.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/12-pizzatio-comenzando-css
       links:
@@ -406,7 +406,7 @@ Proyecto:
         url: footer-grids-landing
         number: "13"
       video_url: xkJw-ONHJe4
-      description: TODO
+      description: Estilaremos el footer y basándonos en el wireframe original, estructuraremos y estilaremos la Landing Page.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/13-pizzatio-footer-grids-landing
         - /css/float/calcular-columnas/
@@ -424,7 +424,7 @@ Proyecto:
         url: acerca-menu
         number: "14"
       video_url: 5qSM3GwTyRs
-      description: TODO
+      description: "Crearemos la estructura y estilaremos dos páginas: Acerca y menú."
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/14-pizzatio-acerca-menu
       links:
@@ -446,7 +446,7 @@ Proyecto:
         url: galeria-js
         number: "15"
       video_url: XlzG_X8z2mg
-      description: TODO
+      description: Crearemos la estructura de nuestra galería para que funcione sin JavaScript, implementaremos la habilidad de poder ver las imágenes en un modal en caso de tener JavaScript. Discutiremos optimización de velocidad y formas de comenzar a aprovechar el poder de JavaScript.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/15-pizzatio-galeria-js
       links:
@@ -468,7 +468,7 @@ Proyecto:
         url: forms-refactor
         number: "16"
       video_url: Ex6R90KWLH0
-      description: TODO
+      description: En la pagina de Contacto reutilizaremos y refactorearemos código del footer, estilaremos forms y veremos un ejemplo de simplemente googlear algo que uno no sabe y como lidiar con lo que encontremos.
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/16-pizzatio-forms-refactor
       links:
