@@ -73,6 +73,7 @@ $blood-harsh: #d52b08;
  * ========================== */
 
 html {
+  position: relative;
   font-size: 1.4em;
   line-height: 1.4;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -196,7 +197,7 @@ nav ul {
   left: 0;
   top: 0;
   bottom: 0;
-  padding: 1em 1em;
+  padding: 1em 1em 0;
   background-color: $light-blue;
   @extend .clearfix;
 }
