@@ -10,6 +10,7 @@ This is a [Middleman](https://github.com/middleman/middleman) project. Middleman
 Access project root folder and...
 
 `gem install middleman`
+
 `bundle install`
 
 
