@@ -2,7 +2,8 @@
   = javascript_include_tag "main"
   - if content_for?(:page_id)
     :javascript
-      var disqus_identifier = '#{yield_content(:page_id)}';
+      var disqus_identifier = "#{yield_content(:page_id)}";
+      var disqus_url = "http://aprend.io#{yield_content(:current_url)}";
     %script{ src: "//aprendio.disqus.com/embed.js", async: true }
   :javascript
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
