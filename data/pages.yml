@@ -42,10 +42,11 @@ HTML:
       code_url:
         - https://github.com/DrummerHead/aprend.io-code/tree/master/02-html-introduccion
       links:
-        - http://bluefish.openoffice.nl/download.html
-        - https://projects.gnome.org/gedit/
+        - http://brackets.io/
+        - https://atom.io/
+        - https://wiki.gnome.org/Apps/Gedit/
+        - http://bluefish.openoffice.nl/
         - http://notepad-plus-plus.org/download/
-        - http://download.brackets.io/
         - http://www.vim.org/
         - http://www.gnu.org/software/emacs/
         - http://en.wikipedia.org/wiki/Comparison_of_text_editors
