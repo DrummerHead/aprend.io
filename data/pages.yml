@@ -3,6 +3,7 @@ Introduccion:
     page_title: Introducción
     url: introduccion
     number: "01"
+    page_id: "01"
   video_url: tJvvwRMQNAo
   description: Introducción a la serie de videos que componen este curso de Front-End. Vamos a hablar también de la teoría detrás de crear un producto y de como crear HTML y CSS no es un fin en si mismo sino que es una forma de poder transmitir una idea y resolver un problema. Breve introducción a la creación de wireframes.
   code_url:
@@ -37,6 +38,7 @@ HTML:
         page_title: Introducción
         url: introduccion
         number: "02"
+        page_id: "02"
       video_url: hpdPOFSGOGo
       description: Comenzaremos con una definición de html y continuamos con una analogía para entender conceptos de propiedades, anidación e indentación. Veremos posibles editores de texto para comenzar a escribir código, hablaremos del DOCTYPE y veremos la estructura básica de un documento HTML5.
       code_url:
@@ -81,6 +83,7 @@ HTML:
         page_title: Semántica
         url: semantica
         number: "03"
+        page_id: "03"
       video_url: 07L0sk2J5e4
       description: Veremos elementos básicos de HTML y explicaremos la diferencia entre el paradigma "Word" basado en apariencia y el paradigma de semántica que usamos en HTML. Comenzamos a editar un archivo de texto como HTML, veremos anchor e imágenes, explicaremos la diferencia entre el rol de una imagen como contenido y como factor estético.
       code_url:
@@ -121,6 +124,7 @@ HTML:
         page_title: Elementos
         url: elementos
         number: "04"
+        page_id: "04"
       video_url: yQdtN0dL-f8
       description: Recorreremos los elementos mas destacables de HTML5 y describiremos su anatomía, comportamiento y utilización.
       code_url:
@@ -180,6 +184,7 @@ CSS:
         page_title: Introducción
         url: introduccion
         number: "05"
+        page_id: "05"
       video_url: SAxg6Sqicgw
       description: "Analizaremos la estructura básica de un selector, su sintaxis y componentes; explicamos clases & id. Modificaremos documentos de capítulos anteriores y veremos como CSS puede modificar el aspecto de nuestros documentos."
       code_url:
@@ -207,6 +212,7 @@ CSS:
         page_title: Propiedades de texto
         url: propiedades-de-texto
         number: "06"
+        page_id: "06"
       video_url: 5tzkmTmfRKQ
       description: Veremos la mayoría de las propiedades CSS relacionadas a la edición de texto
       code_url:
@@ -245,6 +251,7 @@ CSS:
         page_title: Box Model
         url: box-model
         number: "07"
+        page_id: "07"
       video_url: hPo0pKkEoHs
       description: Veremos las propiedades CSS relacionadas al Box Model o "Modelo de Caja"
       code_url:
@@ -271,6 +278,7 @@ CSS:
         page_title: Layout
         url: layout
         number: "08"
+        page_id: "08"
       video_url: 5yuMI8eGL50
       description: Veremos las posibilidades que tenemos de cambiar la disposición (layout) de nuestros elementos con CSS para poder estar informados a la hora de pensar en la estructuración de nuestro documento
       code_url:
@@ -294,6 +302,7 @@ CSS:
         page_title: Float
         url: float
         number: "09"
+        page_id: "09"
       video_url: CVgI2d5Pc7M
       description: Veremos como usar CSS floats para generar columnas y grupos de elementos que coexisten continuamente
       code_url:
@@ -324,6 +333,7 @@ CSS:
         page_title: Position
         url: position
         number: "10"
+        page_id: "10"
       video_url: F3s7rprnenc
       description: Veremos position, todos sus posibles valores y como podemos manipular el layout a nuestro favor.
       code_url:
@@ -355,6 +365,7 @@ Proyecto:
         page_title: Estructura básica
         url: estructura-basica
         number: "11"
+        page_id: "11"
       video_url: FgR9KAmcZOU
       description: Comenzaremos un proyecto de ejemplo, Pizzatio, que es el sitio de una pizzeria. Veremos una estructura básica HTML de inicio así como una estructura de carpetas para poder comenzar a construir nuestro sitio.
       code_url:
@@ -380,6 +391,7 @@ Proyecto:
         page_title: Comenzando CSS
         url: comenzando-css
         number: "12"
+        page_id: "12"
       video_url: 5qu9VpScAYs
       description: Definiremos las diferentes áreas de nuestro CSS para mejor organización, definiremos imágenes de fondo y colores, estructuraremos el Header de nuestro sitio.
       code_url:
@@ -406,6 +418,7 @@ Proyecto:
         page_title: Footer, grids, landing
         url: footer-grids-landing
         number: "13"
+        page_id: "13"
       video_url: xkJw-ONHJe4
       description: Estilaremos el footer y basándonos en el wireframe original, estructuraremos y estilaremos la Landing Page.
       code_url:
@@ -424,6 +437,7 @@ Proyecto:
         page_title: Acerca, Menu
         url: acerca-menu
         number: "14"
+        page_id: "14"
       video_url: 5qSM3GwTyRs
       description: "Crearemos la estructura y estilaremos dos páginas: Acerca y menú."
       code_url:
@@ -446,6 +460,7 @@ Proyecto:
         page_title: Galeria, algo de JS
         url: galeria-js
         number: "15"
+        page_id: "15"
       video_url: XlzG_X8z2mg
       description: Crearemos la estructura de nuestra galería para que funcione sin JavaScript, implementaremos la habilidad de poder ver las imágenes en un modal en caso de tener JavaScript. Discutiremos optimización de velocidad y formas de comenzar a aprovechar el poder de JavaScript.
       code_url:
@@ -468,6 +483,7 @@ Proyecto:
         page_title: Forms, refactor
         url: forms-refactor
         number: "16"
+        page_id: "16"
       video_url: Ex6R90KWLH0
       description: En la pagina de Contacto reutilizaremos y refactorearemos código del footer, estilaremos forms y veremos un ejemplo de simplemente googlear algo que uno no sabe y como lidiar con lo que encontremos.
       code_url:
@@ -478,3 +494,54 @@ Proyecto:
         - naming conventions
         - delimiter-separated
         - CamelCase
+bonus:
+  metadata:
+    page_title: Charlas Bonus
+    url: charlas-bonus
+  children:
+    transformaciones_css_3d:
+      metadata:
+        page_title: Transformaciónes CSS 3D
+        url: transformaciones-css-3d
+        page_id: "transformaciones-css-3d-4GKaESNbRbw"
+      video_url: 4GKaESNbRbw
+      description: Listado de formas de obtener 3D environments en browsers con una profundización sobre CSS 3D Transforms
+      links:
+        - https://desandro.github.io/3dtransforms/
+    animaciones_css:
+      metadata:
+        page_title: Animaciónes CSS
+        url: animaciones-css
+        page_id: "animaciones-css-Z17Ea2KQlWw"
+      video_url: Z17Ea2KQlWw
+      description: Veremos qué es la animación, CSS Transitions, CSS Animations y ejemplos de ambas.
+      links:
+        - http://mcdlr.com/css-animations/#1
+    material_design:
+      metadata:
+        page_title: Material Design
+        url: material-design
+        page_id: "material-design-ZvMxBIkO56I"
+      video_url: ZvMxBIkO56I
+      description: Guías de estilo, Skeuomorphism y flat e introducción a Material Design.
+      links:
+        - http://mcdlr.com/material-design/#1
+        - https://www.google.com/design/spec/material-design/
+    front_end_modular:
+      metadata:
+        page_title: Front–End Modular
+        url: front-end-modular
+        page_id: "front-end-modular-9k0VJ9GuCks"
+      video_url: 9k0VJ9GuCks
+      description: Tratando a tu aplicación como un sistema de bloques intercambiables, definiendo un alcance inicial para los módulos básicos, y teniendo un entendimiento claro de la herencia y el contexto, se puede crear un sistema que es resistente, fácilmente modificable y adaptable a diferentes contextos.
+      links:
+        - http://mcdlr.com/mfe/#1
+    responsive_web_design:
+      metadata:
+        page_title: Responsive Web Design
+        url: responsive-web-design
+        page_id: "responsive-web-design-MNZnHrnQ56U"
+      video_url: MNZnHrnQ56U
+      description: Responsive Web Design is all about having the same content visible in all devices, from tiny mobiles to huge monitors, preserving proper readability and adapting to the medium. In this talk I will present the concept of responsiveness and teach with examples how to make a layout responsive with the one-two punch of fluid layouts and media queries.
+      links:
+        - http://mcdlr.com/rwd/#1
