@@ -1,5 +1,5 @@
 - content_for(:subject_title, subject_title)
-- content_for(:page_id, number)
+- content_for(:page_id, page_id)
 - content_for(:current_url, current_page.url)
 - if page_title != nil
   - content_for(:page_title, page_title)
@@ -10,7 +10,8 @@
       = "#{subject_title}"
       - if page_title != nil
         = "&#9656; #{page_title}"
-      %small.nice-number= number
+      - if number
+        %small.nice-number= number
   %section#video
     %iframe{ src: "//www.youtube.com/embed/#{video_url}", allowfullscreen: true }
     %small
@@ -18,11 +19,12 @@
   %section#details
     %p= description
 
-    %h2 Código
-    %ul
-      - code_url.each do |code_link|
-        %li
-          = link_to code_link, code_link
+    - if code_url
+      %h2 Código
+      %ul
+        - code_url.each do |code_link|
+          %li
+            = link_to code_link, code_link
 
     - if links
       %h2 Links relacionados
@@ -31,10 +33,11 @@
           %li
             = link_to link, link, { rel: "external" }
 
-    %h2 Keywords
-    %ul.keywords
-      - keywords.each do |keyword|
-        %li= keyword
+    - if keywords
+      %h2 Keywords
+      %ul.keywords
+        - keywords.each do |keyword|
+          %li= keyword
 
     %ul.pagination
       - if previous_page
